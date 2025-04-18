@@ -1,0 +1,5 @@
+app.post('/myth', (req, res) => {
+  const { theme, character } = req.body;
+  const story = generateMyth(theme, character);
+  res.json(story);
+});
